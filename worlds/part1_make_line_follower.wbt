@@ -1,0 +1,63 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/Microbot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.16284694608281863 -0.14739324845613455 -0.9755798801026228 4.588261626134926
+  position -0.4145957846807084 -1.5827392436155825 0.437548637057742
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Microbot {
+  hidden position_0_0 139.83304446802256
+  hidden position_0_1 347.0889439434819
+  hidden linearVelocity_0 -0.04402775391229613 0.0730603510615646 -3.4747168298974005e-05
+  hidden angularVelocity_0 0.0015410990335258485 -0.0003213576908987089 -0.9766472187091528
+  hidden translation_4 0.016692587727106134 9.667258166924653e-05 -0.006506983286290617
+  hidden rotation_4 -0.9170249294976852 -0.356788654851474 0.17823337075037715 -4.5000447812526545e-11
+  hidden linearVelocity_4 -0.07811675560737101 0.01310915850348545 -6.736711560498263e-05
+  hidden angularVelocity_4 0.0015410990336176414 -0.0003213576910167826 -0.9766472187078238
+  hidden translation_5 0.0167138752959205 -4.735259474017428e-05 -0.00650524784721996
+  hidden rotation_5 0.9008194125419294 -0.39959651562680737 -0.16984407757271971 -4.545430698499331e-11
+  hidden linearVelocity_5 -0.11114995296567777 0.05771966810618746 -0.0001348925004862808
+  hidden angularVelocity_5 0.0015410990335594944 -0.0003213576910185443 -0.9766472187078222
+  hidden translation_7 0.012 0.0379999999999999 -0.009
+  hidden rotation_7 0 -1 0 1.6029677100716613
+  hidden linearVelocity_7 -0.028456363114994308 0.03806784378088017 9.840481196879777e-07
+  hidden angularVelocity_7 -3.2008954556036042 -2.39654661376014 -1.0507535371435364
+  hidden translation_8 0.012 -0.03799999999999999 -0.009
+  hidden rotation_8 0 1 0 4.769433258574921
+  hidden linearVelocity_8 -0.07330280418097142 0.09759361970236449 -0.00010448677143456409
+  hidden angularVelocity_8 -7.961829315905351 -6.046649917201549 -1.1610294270947177
+  translation -0.34104215786881065 0.6247358437080288 0.021275846158987317
+  rotation -0.015971550366136233 -0.004391201275808597 0.9998628040537649 -0.9482459268324046
+  controller "line_follower"
+  controllerArgs [
+    ""
+  ]
+}
+Transform {
+  translation 0 0 0.01
+  scale 0.01 0.01 0.01
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "../protos/trajectory/tinker.obj"
+        ]
+      }
+    }
+  ]
+}
