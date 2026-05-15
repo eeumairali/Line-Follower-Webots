@@ -38,7 +38,7 @@ class LineFollower(Robot):
 
 if __name__ == "__main__":
     robot = LineFollower()
-    black_color = 230 # less than
+    black_color = 999 # less than
     while robot.step(robot.timestep) != -1:
 
         # Print sensor values
@@ -50,11 +50,11 @@ if __name__ == "__main__":
         )
 
 
-        if left_sensor_value < black_color and right_sensor_value < black_color:
+        if left_sensor_value >= black_color and right_sensor_value >= black_color:
             robot.move_forward()
-        elif left_sensor_value < black_color:
+        elif left_sensor_value >= black_color:
             robot.turn_left()
-        elif right_sensor_value < black_color:
+        elif right_sensor_value >= black_color:
             robot.turn_right()
         else:
             robot.stop()
